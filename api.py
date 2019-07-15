@@ -33,6 +33,7 @@ def home():
 # A route to return all of the available entries in our catalog.
 @app.route('/api/v1/resources/books/all', methods=['GET'])
 def api_all():
+    
     return jsonify(books)
 
 @app.route('/api/v1/resources/books', methods=['GET'])
